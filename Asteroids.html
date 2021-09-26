@@ -538,7 +538,7 @@ addEventListener('click', (event) => {
         x: Math.cos(angle) * 7,
         y: Math.sin(angle) * 7
     }
-    console.log(velocity)
+    
 
     let color = `hsl(${Math.random()*360}, 50%, 50%)`;
 
@@ -554,7 +554,7 @@ addEventListener('click', (event) => {
         radius = 15;
     }
 
-    projectiles.push( new Projectile(player.x, player.y, radius, bunt, velocity));
+    projectiles.push( new Projectile(player.x, player.y, radius, color, velocity));
     
 })
 startGameBtn.addEventListener('click', () => {
