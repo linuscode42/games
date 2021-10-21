@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+
+    
+
+    <div id="resultArea">
+
+    </div>
+
+
+
+    <table>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="last" onclick="removeAll()">DEL*</td>
+            <td class="last" onclick="removelastNum()">DEL</td>
+        </tr>
+        <tr>
+            <td onclick="fillNumber(7)">7</td>
+            <td onclick="fillNumber(8)">8</td>
+            <td onclick="fillNumber(9)">9</td>
+            <td class="last">-</td>
+        </tr>
+
+        <tr>
+            <td onclick="fillNumber(4)">4</td>
+            <td onclick="fillNumber(5)">5</td>
+            <td onclick="fillNumber(6)">6</td>
+            <td onclick="fillNumber(' / ')" class="last">/</td>
+        </tr>
+
+        <tr>
+            <td onclick="fillNumber(1)">1</td>
+            <td onclick="fillNumber(2)">2</td>
+            <td onclick="fillNumber(3)">3</td>
+            <td onclick="fillNumber(' * ')" class="last">X</td>
+        </tr>
+
+        <tr>
+            <td onclick="fillNumber(0)">0</td>
+            <td class="symbol" onclick="fillNumber(' , ')">,</td>
+            <td class="symbol" onclick="calculate()">=</td>
+            <td onclick="fillNumber(' + ')" class="last">+</td>
+        </tr>
+
+    </table>
+
+
+    
+</body>
+</html>
